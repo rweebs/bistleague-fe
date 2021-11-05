@@ -69,7 +69,7 @@ function useWindowSize() {
   //       </div>
   //   );
   // };
-const Win = ({workshop,webinar1,webinar2}) => {
+const Win = () => {
     const size = useWindowSize();
     return (
         <div className={styles.container+" ml-10 md:ml-32"}>
@@ -85,7 +85,7 @@ renderButtonGroupOutside>
 <div className=" mr-2 ml-2">
   <img src="https://bowo-testing.sgp1.cdn.digitaloceanspaces.com/BistLeague/Frame%20911%20%283%29.png"/>
   <div className={styles.box+" flex "}>
-    <p className={styles.UbuntuPurpleWeb +" flex-auto text-lg text-justify xl:text-2xl "}>{75-workshop} slots left</p>
+    <p className={styles.UbuntuPurpleWeb +" flex-auto text-lg text-justify xl:text-2xl "}>{0} slots left</p>
     <div className="flex-auto">
     <img src="https://bowo-testing.sgp1.cdn.digitaloceanspaces.com/BistLeague/Frame%2011748.png"/>
     </div>
@@ -94,7 +94,7 @@ renderButtonGroupOutside>
 </div>
 <div className=" mr-2 ml-2"><img src="https://bowo-testing.sgp1.cdn.digitaloceanspaces.com/BistLeague/Frame%20912%20%282%29.png"/>
 <div className={styles.box+" flex "}>
-    <p className={styles.UbuntuPurpleWeb +" flex-auto text-lg text-justify xl:text-2xl "}>{130-webinar1} slots left</p>
+    <p className={styles.UbuntuPurpleWeb +" flex-auto text-lg text-justify xl:text-2xl "}>{0} slots left</p>
     <div className="flex-auto">
     <img src="https://bowo-testing.sgp1.cdn.digitaloceanspaces.com/BistLeague/Frame%2011748%20%281%29.png"/>
     </div>
@@ -103,7 +103,7 @@ renderButtonGroupOutside>
 </div>
 <div className=" mr-2 ml-2"><img src="https://bowo-testing.sgp1.cdn.digitaloceanspaces.com/BistLeague/Frame%20913%20%282%29.png"/>
 <div className={styles.box+" flex "}>
-    <p className={styles.UbuntuPurpleWeb +" flex-auto text-lg text-justify xl:text-2xl "}>{130-webinar2} slots left</p>
+    <p className={styles.UbuntuPurpleWeb +" flex-auto text-lg text-justify xl:text-2xl "}>{0} slots left</p>
     <div className="flex-auto">
     <img src="https://bowo-testing.sgp1.cdn.digitaloceanspaces.com/BistLeague/Frame%2011748%20%281%29.png"/>
     </div>

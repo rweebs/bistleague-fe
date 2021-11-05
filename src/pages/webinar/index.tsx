@@ -11,38 +11,10 @@ import Head from 'next/head'
 import RegisterMini from 'assets/components/webinar/Win3';
 import TimelineCompe from "assets/components/webinar/Win4";
 import router, {useRouter} from "next/router";
-import {google} from 'googleapis';
-
-export async function getServerSideProps(){
-
-  const auth = await google.auth.getClient({ scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'] });
-
-  const sheets = google.sheets({ version: 'v4', auth });
-
-  // Query
-
-  const range = 'Form Responses 1!K2:M2';
-
-  const response = await sheets.spreadsheets.values.get({
-    spreadsheetId: process.env.SHEET_ID,
-    range,
-  });
-
-  const [workshop,webinar1,webinar2]=response.data.values[0]
 
 
-  return{
-    props:{
-      workshop,
-      webinar1,
-      webinar2
 
-    }
-  }
-}
-
-
-const Footer = ({workshop,webinar1,webinar2}) =>{
+const Footer = () =>{
 
 
     function useWindowSize() {
@@ -90,7 +62,7 @@ const Footer = ({workshop,webinar1,webinar2}) =>{
             <Win size={size}/>
             <Fee/>
             <Fees/>
-            <RegisterMini workshop={workshop} webinar1={webinar1} webinar2={webinar2} />
+            <RegisterMini />
             <TimelineCompe/>
             <div className="static">
               <FooterHead/>

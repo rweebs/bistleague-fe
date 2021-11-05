@@ -22,7 +22,6 @@
     "file-loader": "^6.2.0",
     "formik": "2.2.6",
     "formik-material-ui": "3.0.1",
-    "googleapis": "^78.0.0",
     "import": "0.0.6",
     "next": "11.0.1",
     "next-compose-plugins": "^2.2.1",
