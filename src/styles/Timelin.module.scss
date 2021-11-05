@@ -1,0 +1,288 @@
+
+.body{
+    position: absolute;
+    width: 75%;
+    height: screen;
+    align-self: center;
+    
+}
+
+.timelineMaster {
+    display: flex;
+    justify-content: center; 
+    margin-top:  10%;
+    margin-bottom: 10%;
+    flex-direction: row;
+    position: relative;
+    transition-duration: 0.3s;
+    animation:opac 0.8s;
+}
+@keyframes opac{from{opacity:0} to{opacity:1}}
+
+.timelineMaster:before {
+    content: '';
+    position: absolute;
+    bottom: 48.5%;
+    border-bottom: 5px #8356A0 solid;
+    z-index:0;
+    transform: translateX(0%);
+    width: 80%;
+    animation:opac 0.8s;
+}
+
+.timelineCircle {
+    background: #8356A0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.circleInverted {
+    background: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.timelineDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 60px;
+    min-width: 200px;
+    width: 200px;
+    font-size: 1.5rem;
+}
+
+.timelineDiv:hover {
+    font-size: 1.75rem;
+    /* position: absolute; */
+}
+
+.timelineText {
+    .textInverted {
+        color: #FFF;
+    }
+    .textNormal {
+        color: #8356A0;
+
+    }
+    text-align: center;
+    transition-duration: 0.3s;
+    font-weight: bold;
+}
+
+.timelineText:hover {
+    transition-duration: 0.3s;
+    font-size: 1.75rem;
+}
+
+#timelineTextUp {
+    text-align: center;
+    transition-duration: 0.3s;
+    
+    transform: translateY(-0.5rem);
+}
+
+#timelineTextDown {
+    text-align: center;
+    transition-duration: 0.3s;
+    
+    transform: translateY(0.5rem);
+}
+
+/* Responsive Layout */
+
+@media only screen and (max-width: 1200px) {
+    .timelineDiv {
+        font-size: 1.3rem;
+        min-width: 220px;
+        width: 180px;
+    }
+    
+    .timelineDiv:hover {
+        font-size: 1.5rem;
+    }
+
+    .timelineText:hover {
+        transition-duration: 0.3s;
+        font-size: 1.5rem;
+    }
+
+    #timelineTextUp {
+        transform: translateY(-0.5rem);
+    }
+    
+    #timelineTextDown {
+        transform: translateY(0.5rem);
+    }
+
+    .body{
+        width: 85%;
+        margin-left: 1%;
+    }
+
+    .timelineCircle, .circleInverted {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .timelineDiv {
+        font-size: 1.2rem;
+        margin-left: 30px;
+        margin-right: 40px;
+        min-width: 160px;
+        width: 160px;
+    }
+    
+    .timelineDiv:hover {
+        font-size: 1.35rem;
+    }
+
+    .timelineText:hover {
+        font-size: 1.35rem;
+    }
+
+    .body{
+        width: 83%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .timelineDiv {
+        font-size: 1.1rem;
+        margin-left: 20px;
+        margin-right: 40px;
+        min-width: 140px;
+        width: 140px;
+    }
+    
+    .timelineDiv:hover {
+        font-size: 1.25rem;
+        /* position: absolute; */
+    }
+
+    .timelineText:hover {
+        font-size: 1.25rem;
+    }
+
+    .timelineCircle, .circleInverted {
+        width: 15px;
+        height: 15px;
+    }
+
+    #timelineTextUp {
+        text-align: center;
+        transition-duration: 0.3s;
+        position: absolute;
+        transform: translateY(-2.3rem);
+    }
+    
+    #timelineTextDown {
+        text-align: center;
+        transition-duration: 0.3s;
+        position: absolute;
+        transform: translateY(2.3rem);
+    }
+
+    .body{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .timelineDiv {
+        font-size: .75rem;
+        margin-left: 10px;
+        margin-right: 40px;
+        min-width: 120px;
+        width: 120px;
+    }
+
+    .timelineText, .timelineDiv {
+        font-size: 1rem;
+    }
+    
+    .timelineDiv:hover {
+        font-size: 1.15rem;
+    }
+
+    .timelineText:hover {
+        font-size: 1.15rem;
+    }
+
+    .timelineCircle, .circleInverted {
+        width: 12px;
+        height: 12px;
+    }
+
+    #timelineTextUp {
+        text-align: center;
+        transition-duration: 0.3s;
+        position: absolute;
+        transform: translateY(-2rem);
+    }
+    
+    #timelineTextDown {
+        text-align: center;
+        transition-duration: 0.3s;
+        position: absolute;
+        transform: translateY(2rem);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .timelineCircle, .circleInverted {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .timelineDiv {
+        font-size: .75rem;
+        margin-left: 10px;
+        margin-right: 40px;
+        min-width: 120px;
+        width: 120px;
+    }
+    
+    .timelineText, .timelineDiv {
+        font-size: 0.85rem;
+    }
+
+    .timelineDiv:hover {
+        font-size: .95rem;
+        /* position: absolute; */
+    }
+    
+    .timelineText:hover {
+        transition-duration: 0.3s;
+        font-size: .95rem;
+    }
+
+    .timelineCircle:focus {
+        transform: none;
+    }
+
+    #timelineTextUp {
+        text-align: center;
+        transition-duration: 0.3s;
+        transform: translateY(-2rem);
+    }
+    
+    #timelineTextDown {
+        text-align: center;
+        transition-duration: 0.3s;
+        transform: translateY(2rem);
+    }
+}

@@ -1,0 +1,69 @@
+$small: 400px;
+$medium: 900px;
+
+.container {
+    // background: radial-gradient(110.52% 110.52% at 100% -7.91%, #E48648 0%, #B04C77 35.42%, #8A64AD 70.31%, #6797D8 97.92%);
+
+    background: radial-gradient(110.52% 110.52% at 100% -7.91%, #E48648 0%, #B04C77 35.42%, #8A64AD 70.31%, #6797D8 97.92%);
+
+    color: #fff;
+
+    @media screen and (max-width: $small) {
+        height: 80vh;
+      }
+    @media screen and (min-width: $small) {
+        height: 80vh;
+    }
+
+
+}
+
+
+
+.bePart {
+    font-family: 'Ubuntu Regular';
+    @media screen and (max-width: $small) {
+        font-size: 1.4rem;
+      }
+    @media screen and (min-width: $small) {
+            font-size: 1.875rem;
+    }
+
+}
+
+
+
+.biggestEvent {
+    font-family: 'Montserrat Bold', sans-serif;
+
+    font-weight: 900;
+    @media screen and (max-width: $small) {
+        font-size: 2rem;
+      }
+    @media screen and (min-width: $small) {
+            font-size: 3rem;
+    }
+}
+
+.registerButton {
+    font-family: 'Montserrat Bold';
+    margin-top: 2.5%;
+    @media screen and (max-width: $small) {
+        width: 12rem;
+    height: 3rem;
+    border-radius: 10px;
+    
+    font-size: 1.1rem;
+      }
+    @media screen and (min-width: $small) {
+        width: 16rem;
+    height: 4rem;
+    border-radius: 10px;
+    
+    font-size: 1.5rem;
+    }
+    
+    background-color: #FBA456;
+    font-weight: 800;
+    filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.32));
+}

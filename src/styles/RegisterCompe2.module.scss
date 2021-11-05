@@ -1,0 +1,62 @@
+$small: 400px;
+$medium: 900px;
+
+.container {
+
+    background-size: cover;
+    padding: 5% 0% 5% 10%;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+.MontserratPurpleBig{
+
+
+font-weight: 800;
+
+
+color: #925FB2;
+
+}
+.MontserratOrangeBig{
+
+    font-style: normal;
+    font-weight: 800;
+    
+    
+    color: #FBA456;;
+    
+    }
+
+.UbuntuPurple{
+
+
+font-weight: 300;
+
+
+color: #925FB2;
+
+}
+
+.registerButton {
+    font-family: 'Montserrat Bold';
+    margin-top: 2.5%;
+    @media screen and (max-width: $small) {
+        width: 12rem;
+    height: 3rem;
+    border-radius: 10px;
+    
+    font-size: 1.1rem;
+      }
+    @media screen and (min-width: $small) {
+        width: 16rem;
+    height: 4rem;
+    border-radius: 10px;
+    
+    font-size: 1.5rem;
+    }
+    
+    background-color: #FBA456;
+    font-weight: 800;
+    filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.32));
+}

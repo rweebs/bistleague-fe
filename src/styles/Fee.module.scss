@@ -1,0 +1,37 @@
+.container {
+
+    background-size: cover;
+    color: #fff;
+    background: radial-gradient(109.27% 338.7% at 2.61% 0%, #BE4278 0%, #DF8986 54.69%, #FBA456 100%);
+}
+
+.MontserratWhiteBig{
+
+    font-style: normal;
+    font-weight: 800;
+    letter-spacing: 0.25px;
+
+color: white;
+
+}
+
+.UbuntuWhite{
+
+    font-style: normal;
+    font-weight: 300;
+    text-align: justify;
+
+
+color: white;
+
+}
+.registerButton {
+    font-family: 'Montserrat Bold';
+    width: 15rem;
+    height: 4rem;
+    border-radius: 10px;
+    background-color: #FBA456;
+    font-size: 1.5rem;
+    font-weight: 800;
+    filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.32));
+}

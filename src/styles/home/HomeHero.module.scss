@@ -1,0 +1,173 @@
+.container {
+    background-image: url("/images/home-hero.png");
+    background-size: cover;
+    padding: 8% 15%;
+    color: #fff;
+    height: 100vh;
+}
+
+.titleContainer {
+    width: 39rem;
+}
+
+.bePart {
+    font-family: 'Ubuntu Regular';
+    font-size: 1.875rem;
+}
+
+.biggestEvent {
+    font-family: 'Montserrat Bold', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.registerButton {
+    font-family: 'Montserrat Bold';
+    margin-top: 2.5%;
+    width: 15rem;
+    height: 4rem;
+    background: #FBA456;
+    font-size: 1.5rem;
+    font-weight: 800;
+    filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.32));
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.registerButton:before {
+    content: '';
+    background: linear-gradient(22.5deg, rgba(149, 91, 222, 0.8), rgba(146, 95, 178, 0.8), rgba(190, 66, 120, 0.8), rgba(242, 130, 54, 0.8));
+    background-color: #fff;
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .4s ease-in-out;
+    border-radius: 10px;
+}
+
+.registerButton:after {
+    background: #FBA456;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.registerButton:hover:before {
+    opacity: 1;
+} 
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media only screen and (max-width: 992px) {
+    .titleContainer {
+        width: 32rem;
+    }
+
+    .registerButton {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .titleContainer {
+        margin-top: 15%;
+        width: 27rem;
+    }
+
+    .bePart {
+        font-size: 1.5rem;
+    }
+
+    .biggestEvent {
+        font-size: 2.5rem;
+    }
+
+    .registerButton {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .titleContainer {
+        margin-top: 20%;
+        width: 23rem;
+    }
+
+    .bePart {
+        font-size: 1.25rem;
+    }
+
+    .biggestEvent {
+        font-size: 2rem;
+    }
+
+    .registerButton {
+        margin-top: 8%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .titleContainer {
+        margin-top: 30%;
+        width: 18rem;
+    }
+
+    .bePart {
+        font-size: 1.125rem;
+    }
+
+    .biggestEvent {
+        font-size: 1.75rem;
+    }
+
+    .registerButton {
+        margin-top: 10%;
+        width: 12rem;
+        height: 3rem;
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .titleContainer {
+        margin-top: 45%;
+        width: 16rem;
+    }
+
+    .bePart {
+        font-size: 1rem;
+    }
+
+    .biggestEvent {
+        margin-top: 15%;
+        font-size: 1.5rem;
+    }
+
+    .registerButton {
+        margin-top: 10%;
+        width: 11rem;
+        height: 3rem;
+        font-size: 1rem;
+    }
+}

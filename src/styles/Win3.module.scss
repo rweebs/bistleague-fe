@@ -1,0 +1,145 @@
+$small: 400px;
+$medium: 900px;
+
+.container {
+    background-size: cover;
+    padding: 5% 0% 5% 0%;
+    color: #fff;
+}
+.containerEnd {
+    // background: radial-gradient(110.52% 110.52% at 100% -7.91%, #E48648 0%, #B04C77 35.42%, #8A64AD 70.31%, #6797D8 97.92%);
+padding-top: 5%;
+padding-bottom: 5%;
+background: radial-gradient(109.27% 338.7% at 2.61% 0%, #BE4278 0%, #DF8986 54.69%, #FBA456 100%);
+    color: #fff;
+
+
+
+
+}
+
+.slot{
+    background: radial-gradient(106.73% 103.67% at 0% 2.08%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+border: 3.5px solid #FFFDFD;
+box-sizing: border-box;
+backdrop-filter: blur(42px);
+border-radius: 15px;
+}
+.slot2{
+border-right: 3.5px solid #FFFDFD;
+}
+.container2 {
+    background-size: cover;
+    color: #fff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: radial-gradient(109.27% 338.7% at 2.61% 0%, #BE4278 0%, #DF8986 54.69%, #FBA456 100%);
+}
+.container3 {
+    background-size: cover;
+    color: #fff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: radial-gradient(122.08% 386.39% at -6.84% -7.72%, rgba(131, 86, 160, 0.9) 0%, rgba(82, 136, 200, 0.9) 79.69%);
+}
+.MontserratPurpleBig{
+
+font-style: normal;
+font-weight: 800;
+
+
+color: #925FB2;
+
+}
+
+.MontserratWhiteBig{
+
+    font-style: normal;
+    font-weight: 800;
+    
+    
+    color: #fff;
+    
+    }
+
+.UbuntuPurple{
+
+font-style: normal;
+font-weight: 300;
+
+
+color: #925FB2;
+
+}
+
+.UbuntuWhite{
+
+    font-style: normal;
+    
+    
+    color: #ffff;
+    
+    }
+
+.UbuntuBlack{
+
+    font-style: normal;
+    
+    
+    color: #52396B;
+    
+    }
+
+
+
+.UbuntuPurpleWeb{
+
+    text-align: center;
+
+    
+    color: #925FB2;
+    
+    }
+    
+
+.containerDS{
+    background: radial-gradient(101.5% 344.54% at 0% 23.21%, rgba(152, 91, 171, 0.2) 0%, rgba(201, 148, 204, 0.2) 23.23%, rgba(205, 153, 207, 0.2) 88.33%, rgba(96, 183, 237, 0.2) 100%);
+box-shadow: 0px 0px 4px rgba(146, 95, 178, 0.5);
+border-radius: 16px;
+}
+
+.containerML{
+    background: rgba(255, 255, 255, 0.95);
+box-shadow: 0px 0px 4px rgba(146, 95, 178, 0.5);
+border-radius: 16px;
+}
+
+.containerSingle{
+    background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 16px;
+}
+.ubuntuTitleSingle{
+    color: linear-gradient(180deg, rgba(141, 92, 187, 0.2) 0%, rgba(0, 0, 0, 0) 100%),
+radial-gradient(110.52% 110.52% at 100% -7.91%, #E48648 0%, #B04C77 35.42%, #8A64AD 70.31%, #6797D8 97.92%);
+
+}
+
+.registerButton {
+    font-family: 'Montserrat Bold';
+    width: 11rem;
+    height: 3.1rem;
+    border-radius: 10px;
+    background-color: #FBA456;
+    font-size: 1.2rem;
+    font-weight: 800;
+    filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.32));
+}
+
+
+// .box{
+//     // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+// border-radius: 16px;
+// border-top: none;
+// border-bottom: none;
+// }

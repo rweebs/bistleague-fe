@@ -1,0 +1,36 @@
+.container {
+    // background: radial-gradient(110.52% 110.52% at 100% -7.91%, #E48648 0%, #B04C77 35.42%, #8A64AD 70.31%, #6797D8 97.92%);
+
+    background-image: url("/images/submiaaion.png");
+
+    color: #fff;
+
+    height: 100vh;
+
+
+}
+
+.bePart {
+    font-family: 'Ubuntu Regular';
+    font-size: 1.875rem;
+}
+
+
+
+.biggestEvent {
+    font-family: 'Montserrat Bold', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.registerButton {
+    font-family: 'Montserrat Bold';
+    margin-top: 2.5%;
+    width: 16rem;
+    height: 4rem;
+    border-radius: 10px;
+    background-color: #FBA456;
+    font-size: 1.5rem;
+    font-weight: 800;
+    filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.32));
+}

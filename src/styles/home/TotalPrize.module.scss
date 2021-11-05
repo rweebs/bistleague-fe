@@ -1,0 +1,117 @@
+.container {
+    background: radial-gradient(109.27% 338.7% at 2.61% 0%, #BE4278 0%, #DF8986 54.69%, #FBA456 100%);
+    color: #fff;
+    height: 48rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding: 0;
+}
+
+// .containerColumn {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     margin: 5%;
+// }
+
+.winPrize {
+    font-size: 2rem;
+    font-family: 'Montserrat Bold', sans-serif;
+}
+
+.textContainer {
+    display:flex;
+    justify-content:center;
+    flex-direction: row;
+    padding: 6% 15%;
+}
+
+.countdownContainer {
+    margin-right: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cash {
+    font-size: 3.75rem;
+    font-family: 'Montserrat Bold', sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+    .winPrize {
+        font-size: 1.625rem;
+    }
+    
+    .cash {
+        font-size: 3.25rem;
+    }
+
+    .countdownContainer {
+        margin-right: 7%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        height: 45rem;
+    }
+    .winPrize {
+        font-size: 1.75rem;
+    }
+    
+    .cash {
+        font-size: 4rem;
+    }
+
+    .textContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .countdownContainer {
+        margin-right: 0%;
+        margin-bottom: 10%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .winPrize {
+        font-size: 1.5rem;
+    }
+    
+    .cash {
+        font-size: 3.75rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .container {
+        height: 38rem;
+    }
+
+    .winPrize {
+        font-size: 1.5rem;
+    }
+    
+    .cash {
+        font-size: 2.75rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container {
+        height: 33rem;
+    }
+
+    .winPrize {
+        font-size: 1.25rem;
+    }
+
+    .cash {
+        font-size: 2.25rem;
+    }
+}

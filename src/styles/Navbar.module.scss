@@ -1,0 +1,128 @@
+.navbar {
+    background: radial-gradient(115.97% 557.11% at -2.99% -7.83%, rgba(149, 91, 222, 0.8) 0%, rgba(146, 95, 178, 0.8) 34.69%, rgba(190, 66, 120, 0.8) 69.06%, rgba(242, 130, 54, 0.8) 100%); 
+    padding: 0.5% 3%;
+    position: sticky;
+    font-size: 1.25rem;
+    top: 0;
+    z-index: 999;
+}
+
+.navItem {
+    display: inline;
+    margin-right:2%;
+    line-height: 200%;
+}
+
+.noMarRight {
+    display: inline;
+    line-height: 200%;
+}
+
+.title {
+    line-height: '100%'
+}
+
+
+// animations
+
+@keyframes animatetop{
+    from{
+        opacity:0;
+        display: none; 
+        transform: translateY(-25vh);
+    } 
+    to{
+        opacity:1;
+        transform: translateY(-0.25vh);
+    }
+}
+
+@keyframes animatetopLower{
+    from{
+        opacity:0;
+        display: none; 
+        transform: translateY(-1vh);
+    } 
+    to{
+        opacity:1;
+        transform: translateY(-0.25vh);
+    }
+}
+
+@keyframes animateout{
+    from{
+        opacity:1;
+        transform: translateY(-0.25vh);
+    } 
+    to{
+        opacity:0;
+        display: none;       
+        transform: translateY(-25vh);
+    }
+}
+
+.dropdown{
+    margin-top: 5%;
+    animation: animatetop 0.4s;
+    max-height: 500px;
+    font-size: 1.1rem;
+    line-height: 200%;
+}
+
+.dropdownOut{
+    animation: animateout 0.4s;
+}
+
+@media only screen and (max-width: 1200px) {
+    .navItem, .noMarRight{
+        font-size: 1.15rem;
+    }
+    .navbar {
+        padding: 1% 3%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .navItem, .noMarRight {
+        font-size: 1.15rem;
+    }
+    .navbar {
+        padding: 1.5% 3%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navItem, .noMarRight {
+        font-size: 0.9rem;
+        line-height: 250%;
+    }
+    .navbar {
+        padding: 1.5% 3%;
+    }
+    .title {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .navItem, .noMarRight {
+        display: none;
+    }
+    .title {
+        font-size: 1.25rem;
+        margin-left: 3%;
+    }
+
+    .navbar {
+        padding: 2% 3%;
+    }
+}
+
+// @media only screen and (max-width: 768px) {
+//     .navItem, .noMarRight {
+//         font-size: 1rem;
+//     }
+//     .navbar {
+//         padding: 1% 3%;
+//     }
+// }
