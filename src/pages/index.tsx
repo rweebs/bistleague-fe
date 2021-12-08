@@ -16,14 +16,14 @@ import swal from 'sweetalert2';
 
 
 const Footer = () =>{
-  swal.fire({
-        title: 'Dear Participants',
-        icon: 'info',
-        html:
-        '🚨The Schedule for Webinar - Leveraging Data to Drive Decision Making has been changed to 10.00 AM - 11.10 AM🚨',
-        confirmButtonText:
-          '<i class="fa fa-thumbs-up"></i> OK',
-      })
+  // swal.fire({
+  //       title: 'Dear Participants',
+  //       icon: 'info',
+  //       html:
+  //       '🚨The Schedule for Webinar - Leveraging Data to Drive Decision Making has been changed to 10.00 AM - 11.10 AM🚨',
+  //       confirmButtonText:
+  //         '<i class="fa fa-thumbs-up"></i> OK',
+  //     })
 
     function useWindowSize() {
         // Initialize state with undefined width/height so server and client renders match
